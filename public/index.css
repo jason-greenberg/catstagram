@@ -1,0 +1,133 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* background-image: url(https://scitechdaily.com/images/New-Image-of-a-Region-of-Orion%E2%80%99s-Belt.jpg); */
+  height: 100vh;
+  background-color: rgb(250,250,250);
+  flex-direction: column;
+  align-items: center;
+}
+
+main,
+.comments {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px #DBDBDB solid;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 20px 15px;
+}
+
+main {
+  justify-content: center;
+  box-sizing: border-box;
+  width: 500px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  max-height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 15px;
+}
+
+.counter-vote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 90px;
+}
+
+#upvote:active {
+  background-color: rgb(255, 183, 50);
+}
+
+#downvote:active {
+  background-color: rgb(100, 100, 255);
+}
+
+button {
+  background-color: lightgrey;
+  border-radius: 3px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 500px;
+  font-size: 14px;
+}
+
+.new-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 0, 40px;
+}
+
+#prompt,
+#input,
+#submit {
+  max-height: 20px;
+}
+
+#input {
+  min-width: 150px;
+}
+
+ul {
+  align-self: flex-start;
+}
+
+#new-cat-button {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#new-cat-button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#new-cat-button:active {
+  transform: scale(0.95);
+}
+
+ul {
+  list-style-type: none;
+}
